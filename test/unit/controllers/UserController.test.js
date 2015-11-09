@@ -1,5 +1,6 @@
 var request = require('supertest');
 
+//Create user w/ name Miko
 describe('#create()', function() {
 	it('should create a user', function (done) {
   		request('http://localhost:1337')
@@ -9,6 +10,7 @@ describe('#create()', function() {
   	});
 });
 
+//Find just-created user
 describe('#findUser()', function() {
 	it('should find a user', function (done) {
 		request('http://localhost:1337')
@@ -18,6 +20,7 @@ describe('#findUser()', function() {
 	});
 });
 
+//Delete Miko :(
 describe('#deleteUser()', function() {
 	it('should delete a user', function (done) {
 		request('http://localhost:1337')

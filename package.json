@@ -31,7 +31,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/jmarque/my-project.git"
+    "url": "git://github.com/marquezmiko/SailsJS.git"
   },
   "author": "jmarque",
   "license": "",

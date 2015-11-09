@@ -6,6 +6,7 @@
  */
 
 module.exports = {
+	//Create User, returns 201 if successful
 	create: function(req, res){
 	  var params = req.params.all()
 
@@ -14,6 +15,7 @@ module.exports = {
 	  });
 	},
 
+	//Find User, return 200 if successful, 404 if not
 	findUser: function(req, res){
 		var param = req.param('name');
 		console.log(param);
@@ -28,6 +30,7 @@ module.exports = {
 		});
 	},
 
+	//Delete User, return 200 if successful, 404 if no such record found
 	deleteUser: function(req, res){
 		var param = req.param('name')
 		console.log(param);
